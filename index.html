@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Customer</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Codedthemes" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/zen_ui.css">
+    <!-- Required Js -->
+
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/pages/dashboard-main.js"></script> -->
+
+    <!-- UIkit CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" /> -->
+    <!-- UIkit JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script> -->
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="index-chart.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- [ Pre-loader ] start -->
+
+    <!-- [ Pre-loader ] End -->
+    <!-- [ navigation menu ] start -->
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menupos-fixed navbar-collapsed  menu-light">
+        <div class="navbar-wrapper">
+            <div class="navbar-content scroll-div ">
+                <ul class="nav pcoded-inner-navbar ">
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">
+                            <span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+    <!-- [ navigation menu ] End -->
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+        <div class="m-header"> <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+            <a href="#!" class="b-brand">
+                <!-- ========   change your logo hear   ============ -->
+                <!-- ========   change your logo hear   ============ -->
+                <img src="assets/images/logo.svg" alt="" class="logo">
+            </a>
+            <a href="#!" class="mob-toggler"> <i class="feather icon-more-vertical"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="feather icon-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right ShadowDrop profile-notification">
+                            <div class="pro-head">
+                                <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+                                <span>John Doe</span>
+                                <a href="auth-signin.html" class="dud-logout" title="Logout"> <i class="feather icon-power"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="development" class="dropdown-item"><i class="feather icon-mail"></i>Development Tools</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="Breadcrumb_Bg bg-light py-2">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-light mb-0 py-0">
+                            <li class="breadcrumb-item"><a href="#!"><i class="feather icon-home"></i></a> </li>
+                            <li class="breadcrumb-item"><a href="#!">Home</a> </li>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- <div class="col-sm-6">
+                    <span id="Edit-Attributes" class="float-right mr-3 btn btn-sm"><i class="fas fa-save"></i>&nbsp;
+                        Save</span>
+                </div> -->
+            </div>
+        </div>
+        <!-- drag and drop -->
+        <div class="m10 mt-1">
+
+            <div class="container-fluid">
+                <div class="row droppableD">
+                    <div class="col-md-12 draggableD">
+                        <div class="card-header">
+                            <h5>Google Chart</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="google-chart" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 2</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart2" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart3</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart3" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 4</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart4" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 5</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart5" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 6</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart6" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 7</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart7" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 8</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart8" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 draggableD">
+                        <div class="card-header">
+                            <h5>Facebook Chart 9</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart9" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <ul uk-sortable="handle: .uk-card" uk-grid>
+                <li class="uk-width-large-1-1">
+                    <div class="uk-card uk-card-default  uk-text-center">
+                        <div class="card-header">
+                            <h5>Google Chart</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="google-chart" style="width:100%"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="card-header">
+                            <h5>Facebook Chart</h5>
+                        </div>
+                        <div class="card-body1">
+                            <div id="facebook-chart" style="width:100%"></div>
+                        </div>
+                    </div>
+                </li> -->
+
+
+
+            </ul>
+        </div>
+        <!-- drag and drop  end-->
+    </div>
+    </div>
+    <style>
+        .m10 {
+            margin: 0 8px 0 11px;
+        }
+    </style>
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/plugins/apexcharts.min.js"></script>
+    <script src="assets/js/pages/chart-apex.js"></script>
+</body>
+
+</html>
